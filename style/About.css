@@ -5,3 +5,88 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+
+
+body {
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  background: #1a1a1a;
+  padding: 20px;
+  color: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;             /* makes logo + text side by side */
+    gap: 250px;
+}
+
+.logo {
+  width: 80px;                /* make logo bigger */
+  height: auto;
+
+}
+.nav-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.nav-text p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+
+nav {
+    background: #613f0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7043;
+}
+
+.search {
+    margin-left: auto;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+}

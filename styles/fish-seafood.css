@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #f8f3e7;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #d35400;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  background: #131212; /* dark background */
+}
+
+/* Each menu card */
+.menu-item {
+  background-color: #1e1e1e; /* slightly lighter than background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff; /* text color for dark background */
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.menu-item h4 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.menu-item p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+
+/* Optional Khmer pattern background for highlight */
+.menu-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/patterns/khmer_pattern.png') repeat;
+  opacity: 0.05;
+  z-index: -1;
+}
+.menu-list{
+  display: grid;
+  grid-template-columns: repeat(4 );
+}
+/* Link of menus */
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+}
+
+.menu-link:hover .menu-item {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+/* menu link */
+/* <!-- CSS for grid layout --> */
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Menu links styling */
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+}
+
+/* Hover effect */
+.menu-link:hover .menu-item {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+/* Grid layout */
+
+
+/* Menu item styling */
+.menu-item {
+    background-color: #fff; /* Optional card background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item h4 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+h1{
+  text-align: center;
+  color: #d35400;
+  padding: 40px;
+}
+/* Container for the recipe */
+.recipe {
+    background-color: #fff8f0; /* warm cream background */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80%;
+    font-family: 'Georgia', serif; /* traditional, elegant font */
+    color: #4a3c31;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image and title container */
+.recipe .img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe .img h2 {
+    font-size: 2rem;
+    color: #a75c3c; /* earthy reddish-brown color for traditional feel */
+    margin-bottom: 10px;
+}
+
+.recipe .img img.recipe-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    border: 3px solid #f3e0d6; /* subtle border for traditional touch */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recipe .img p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5a4a3b;
+}
+
+/* Ingredients & Steps */
+.menu-recipe {
+    margin-top: 15px;
+}
+
+.menu-recipe h3 {
+    font-size: 1.5rem;
+    color: #8c5e3c;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f1d6c0;
+    padding-bottom: 5px;
+}
+
+.menu-recipe ul,
+.menu-recipe ol {
+    padding-left: 20px;
+}
