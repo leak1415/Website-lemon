@@ -9,18 +9,19 @@
 
 body {
 
-  color: #ddd;
-  line-height: 1.6;
+  background-color: #070707;
+  /* line-height: 1.6; */
 }
 
 /* Navbar styles */
 nav {
-  background-color: #f8f3e7;
+  background-color: rgb(243, 225, 124);
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
+  color: #070707;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,6 +51,7 @@ nav {
   color: #d35400;
 }
 
+
 .menu-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -67,7 +69,7 @@ nav {
   text-align: center;
   padding: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: #fff; /* text color for dark background */
+  color: #070707; /* text color for dark background */
 }
 
 .menu-item:hover {
@@ -179,65 +181,62 @@ h1{
   padding: 40px;
 }
 /* Container for the recipe */
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    padding: 50px;
+    background: #fefcf6; /* coconut cream background */
+    
+  }
+
+
+
 .recipe {
-    background-color: #fff8f0; /* warm cream background */
+    background: #fff;
+    border: 2px solid #d4a017; /* golden border */
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 80%;
-    font-family: 'Georgia', serif; /* traditional, elegant font */
-    color: #4a3c31;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px 30px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-/* Hover effect */
 .recipe:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: scale(1.02);
 }
 
-/* Image and title container */
-.recipe .img {
+.recipe h2 {
     text-align: center;
-    margin-bottom: 20px;
+    color: #3b5323; /* banana leaf green */
+    margin-bottom: 12px;
 }
 
-.recipe .img h2 {
-    font-size: 2rem;
-    color: #a75c3c; /* earthy reddish-brown color for traditional feel */
-    margin-bottom: 10px;
-}
-
-.recipe .img img.recipe-img {
+.recipe-img {
     width: 100%;
-    max-width: 400px;
+    height: 220px; /* fixed height for all */
+    object-fit: cover; /* crops without distortion */
     border-radius: 12px;
-    border: 3px solid #f3e0d6; /* subtle border for traditional touch */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+    display: block;
 }
 
-.recipe .img p {
-    margin-top: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #5a4a3b;
+
+.recipe p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
-/* Ingredients & Steps */
 .menu-recipe {
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 .menu-recipe h3 {
-    font-size: 1.5rem;
-    color: #8c5e3c;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #f1d6c0;
-    padding-bottom: 5px;
+    color: #d2691e; /* warm earthy orange */
+    border-bottom: 2px solid #d4a017;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 
-.menu-recipe ul,
-.menu-recipe ol {
-    padding-left: 20px;
-}
+

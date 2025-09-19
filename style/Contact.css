@@ -33,10 +33,14 @@ header {
   justify-content: center;             /* makes logo + text side by side */
     gap: 250px;
 }
+.header-container img{
 
+}
 .logo {
   width: 80px;                /* make logo bigger */
   height: auto;
+  display: flex;
+  justify-content: flex-start;
 }
 .nav-text{
     text-align: center;
@@ -88,4 +92,121 @@ nav ul li a:hover {
     cursor: pointer;
     color: #fff;
     font-size: 1.4rem;
+}
+/* General Section Styling */
+.main-contain section {
+    background-color: rgba(255, 243, 224, 0.9); /* soft warm Khmer color overlay */
+    padding: 60px 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    font-family: 'Khmer OS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b3f2f; /* earthy brown text */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    /* Center content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Background image space */
+.main-contain section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('/images/khmer-food-bg.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.15; /* subtle overlay for readability */
+    z-index: 0;
+}
+
+/* Make content appear above background image */
+.main-contain section * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Headings */
+.main-contain section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #b85c38; /* Khmer spice color */
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.main-contain section p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #4b3f2f;
+    max-width: 700px; /* optional for better readability */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px; /* centers the form and limits width */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d9b48f;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fff7f0;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #b85c38;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #9e4b2e;
+}
+
+/* Links */
+a {
+    color: #b85c38;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-contain section {
+        padding: 40px 20px;
+    }
+    .main-contain section h2 {
+        font-size: 1.6rem;
+    }
+    form {
+        max-width: 100%;
+    }
 }

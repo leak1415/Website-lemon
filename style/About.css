@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 
 body {
-    background-color: #111;
-    color: #ddd;
-    line-height: 1.6;
+  background-color: #111;
+  color: #ddd;
+  line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #1a1a1a;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* make sure it stays above other content */
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 header {
   background: #1a1a1a;
@@ -30,21 +31,25 @@ header {
 
 .header-container {
   display: flex;
-  justify-content: space-between;             /* makes logo + text side by side */
-    gap: 250px;
+  justify-content: space-between;
+  /* makes logo + text side by side */
+  gap: 250px;
 }
 
 .logo {
-  width: 80px;                /* make logo bigger */
+  width: 80px;
+  /* make logo bigger */
   height: auto;
 
 }
-.nav-text{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
+.nav-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
 .nav-text h1 {
   font-size: 1.8rem;
   margin-bottom: 5px;
@@ -57,36 +62,246 @@ header {
 
 
 nav {
-    background: #613f0a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    flex-wrap: wrap;
+  background: #613f0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff7043;
+  color: #ff7043;
 }
 
 .search {
-    margin-left: auto;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.4rem;
+  margin-left: auto;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Make sections full width */
+.invitation{
+ text-align: center;
+}
+.about-section,
+.mission,
+.storytelling,
+.invitation,
+.values {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* About Section */
+.about-section {
+  position: relative;
+  /* padding: 10px 50px; */
+  color: white;
+  overflow: hidden;
+  /* min-height: 400px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background slideshow */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: bgSlide 18s infinite;
+  transition: background-image 1s ease-in-out;
+}
+section .about-text h2{
+  color: #f5c907;
+}
+.about-text {
+  position: relative;
+  z-index: 1;
+  background: #2e2c2562;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Slideshow animation */
+@keyframes bgSlide {
+  0%, 15%   { background-image: url('/images/about/about.bg1.jpg'); }
+  15%, 33%  { background-image: url('/images/about/about.bg2.jpg'); }
+  33%, 40%  { background-image: url('/images/about/about.bg3.jpg'); }
+  100%      { background-image: url('/images/about/about.bg1.jpg'); }
+}
+
+/* ===== General Section Styling ===== */
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+/* Line under text */
+section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #f4b41a;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Mission Section ===== */
+.mission {
+  background: #fff8e1;
+  padding: 60px 0;
+  text-align: center;
+  color: #3e2c1c;
+}
+
+.mission h2 {
+  color: #a83232;
+  margin-bottom: 30px;
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.mission .card {
+  background: #fdf6e3;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #f4b41a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission .card h3 {
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+.mission .card p {
+  color: #444;
+}
+
+.mission .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* ===== Storytelling Section ===== */
+.storytelling {
+  background: #fbe8d3;
+  padding: 70px 0;
+  margin: 0;
+}
+
+.storytelling h2 {
+  color: #a83232;
+}
+
+.storytelling p {
+  color: #3e2c1c;
+  max-width: 800px;
+  margin: 15px auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ===== Invitation Section ===== */
+.invitation {
+  background: #fff8e1;
+  border-left: 6px solid #f4b41a;
+  padding: 50px 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.invitation h2 {
+  color: #2e7d32;
+}
+
+.invitation p {
+  color: #333;
+  font-size: 1.05rem;
+}
+
+/* ===== Values Section ===== */
+.values {
+  background: #fdf6e3;
+  padding: 60px 0;
+  text-align: center;
+  color: #3e2c1c;
+}
+
+.values h2 {
+  color: #d4a017;
+  margin-bottom: 30px;
+}
+
+.value-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.values .card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #f4b41a;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.values .card h3 {
+  color: #a83232;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.values .card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.values .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
