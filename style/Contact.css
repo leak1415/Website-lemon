@@ -215,18 +215,103 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .main-contain section {
-        padding: 40px 20px;
-    }
-
-    .main-contain section h2 {
-        font-size: 1.6rem;
-    }
-
-    form {
-        max-width: 100%;
-    }
+.social-icons {
+  font-size: 16px; /* text size */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* spacing between items */
+  flex-wrap: wrap; /* responsive wrap */
 }
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* link color */
+  gap: 6px; /* spacing between icon and text */
+}
+
+.social-icons img {
+  width: 24px;  /* set good width for icons */
+  height: 24px; /* keep consistent height */
+  object-fit: contain;
+}
+
+/* Footer Section */
+.footer {
+    background: #0e1214; /* warm dark brown */
+    color: black;      /* light cream text */
+    padding: 40px 20px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer h3,
+.footer h4 {
+    color: #ffd27f; /* golden accent */
+    margin-bottom: 12px;
+}
+
+.footer p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #f1e9e0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #f8f5f0;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd27f;
+}
+
+/* Social Icons */
+.footer-social .social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social .social-icons img {
+    width: 28px;
+    height: 28px;
+  
+}
+
+.footer-social .social-icons img:hover {
+    filter: brightness(1) invert(0); /* revert to original */
+    transform: scale(1.1);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #dcd3c9;
+}
+

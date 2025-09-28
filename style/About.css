@@ -15,51 +15,50 @@ body {
 
 /* Navbar */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* make sure it stays above other content */
-  background-color: #1a1a1a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 header {
-  background: #1a1a1a;
-  padding: 20px;
-  color: #fff;
+    background: #1a1a1a;
+    padding: 20px;
+    color: #fff;
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  /* makes logo + text side by side */
-  gap: 250px;
+    display: flex;
+    justify-content: center;
+    /* makes logo + text side by side */
+    gap: 250px;
 }
 
 .logo {
-  width: 80px;
-  /* make logo bigger */
-  height: auto;
-
+    width: 80px;
+    /* make logo bigger */
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav-text {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nav-text h1 {
-  font-size: 1.8rem;
-  margin-bottom: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
 }
 
 .nav-text p {
-  font-size: 0.95rem;
-  color: #bbb;
+    font-size: 0.95rem;
+    color: #bbb;
 }
-
 
 nav {
   background: #613f0a;
@@ -305,3 +304,81 @@ section h2::after {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
+/* Footer Section */
+.footer {
+    background: #0e1214; /* warm dark brown */
+    color: black;      /* light cream text */
+    padding: 40px 20px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer h3,
+.footer h4 {
+    color: #ffd27f; /* golden accent */
+    margin-bottom: 12px;
+}
+
+.footer p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #f1e9e0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #f8f5f0;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd27f;
+}
+
+/* Social Icons */
+.footer-social .social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social .social-icons img {
+    width: 28px;
+    height: 28px;
+  
+}
+
+.footer-social .social-icons img:hover {
+    filter: brightness(1) invert(0); /* revert to original */
+    transform: scale(1.1);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #dcd3c9;
+}
+

@@ -15,51 +15,50 @@ body {
 
 /* Navbar */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #1a1a1a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header {
-  background: #1a1a1a;
-  padding: 20px;
-  color: #fff;
+    background: #1a1a1a;
+    padding: 20px;
+    color: #fff;
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  /* makes logo + text side by side */
-  gap: 250px;
+    display: flex;
+    justify-content: center;
+    /* makes logo + text side by side */
+    gap: 250px;
 }
 
 .logo {
-  width: 80px;
-  /* make logo bigger */
-  height: auto;
-  display: flex;
-  justify-content: flex-start;
+    width: 80px;
+    /* make logo bigger */
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav-text {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nav-text h1 {
-  font-size: 1.8rem;
-  margin-bottom: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
 }
 
 .nav-text p {
-  font-size: 0.95rem;
-  color: #bbb;
+    font-size: 0.95rem;
+    color: #bbb;
 }
-
 nav {
   background: #613f0a;
   display: flex;
