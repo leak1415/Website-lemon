@@ -18,12 +18,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #1a1a1a;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #1a1a1a8e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.466);
 }
 
 header {
-    background: #1a1a1a;
+    background: #1a1a1a42;
     padding: 20px;
     color: #fff;
 }
@@ -62,7 +62,7 @@ header {
 
 
 nav {
-    background: #613f0a;
+    background: #ce8a1c50;
     display: flex;
     justify-content: center;
     align-items: center;

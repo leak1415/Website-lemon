@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: #f7e6ae;
-  color: #ddd;
+  background-color: #0f0f0f;
+  color: #cf9c2c;
   line-height: 1.6;
 }
 
@@ -18,12 +18,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #1a1a1a;
+    background-color: #1a1a1a7c;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header {
-    background: #1a1a1a;
+    background: #0e0d0d75;
     padding: 20px;
     color: #fff;
 }
@@ -31,7 +31,6 @@ header {
 .header-container {
     display: flex;
     justify-content: center;
-    /* makes logo + text side by side */
     gap: 250px;
 }
 
@@ -59,46 +58,10 @@ header {
     font-size: 0.95rem;
     color: #bbb;
 }
-nav {
-  background: #613f0a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  flex-wrap: wrap;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #ff7043;
-}
-
-/* .search {
-  margin-left: auto;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.4rem;
-} */
-
-
 
 /* Navigation */
 nav {
-  background: #613f0a;
+  background: #61400a69;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,9 +94,8 @@ nav ul li a:hover {
     text-align: center;
     padding: 80px 20px;
     position: relative;
-    color: #fff; /* text color over banner */
+    color: #fff; 
 }
-
 .hero::after {
     content: "";
     position: absolute;
@@ -162,15 +124,9 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-
-/* .search {
-    margin-left: auto;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.4rem;
-} */
-
-/* Food Grid */
+main{
+    background-color:#f7e6ae;
+}
 main .main-text {
   text-align: center;
   color: #ff7043;
@@ -188,7 +144,24 @@ main .main-text {
   text-decoration: none;
   color: inherit;
 }
+.khmer-btn {
+    background-color: #d97706;
+    /* Khmer golden-orange */
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+}
 
+.khmer-btn:hover {
+    background-color: #b45309;
+    /* darker orange on hover */
+    transform: scale(1.05);
+}
 .container {
   background: #fff;
   border-radius: 12px;
@@ -208,19 +181,21 @@ main .main-text {
 }
 
 .text-img {
-  padding: 15px;
+  padding: 40px;
 }
 
 .text-img h4 {
   font-size: 1.2rem;
   margin-bottom: 8px;
   color: #0a0a0a;
+  height: 50px;
 }
 
 .text-img p {
   font-size: 0.95rem;
   line-height: 1.4;
   color: #0a0a0a;
+  height: 200px;
 }
 
 .container:hover {
@@ -231,31 +206,25 @@ main .main-text {
 .nav-buttons {
   display: flex;
   gap: 10px;
-  /* space between buttons */
   margin-left: auto;
-  /* push buttons to the right */
 }
 
-/* Style for the buttons */
 .nav-buttons button {
   padding: 8px 16px;
   background-color: white;
-  /* button background */
   color: #ff6b6b;
-  /* text color */
   font-weight: bold;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .nav-buttons button:hover {
   background-color: #ff6b6b;
   color: white;
 }
 
-/* Optional: make Sign Up button stand out */
 .nav-buttons button:last-child {
   background-color: #ff6b6b;
   color: white;
@@ -267,8 +236,8 @@ main .main-text {
 }
 /* Footer Section */
 .footer {
-    background: #0e1214; /* warm dark brown */
-    color: black;      /* light cream text */
+    background: #0e1214;
+    color: black;     
     padding: 40px 20px 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -283,7 +252,7 @@ main .main-text {
 
 .footer h3,
 .footer h4 {
-    color: #ffd27f; /* golden accent */
+    color: #ffd27f;
     margin-bottom: 12px;
 }
 
@@ -326,7 +295,7 @@ main .main-text {
 }
 
 .footer-social .social-icons img:hover {
-    filter: brightness(1) invert(0); /* revert to original */
+    filter: brightness(1) invert(0); 
     transform: scale(1.1);
 }
 

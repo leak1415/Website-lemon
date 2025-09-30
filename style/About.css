@@ -18,12 +18,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #1a1a1a;
+    background-color: #1a1a1a81;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header {
-    background: #1a1a1a;
+    background: #1a1a1a52;
     padding: 20px;
     color: #fff;
 }
@@ -61,15 +61,13 @@ header {
 }
 
 nav {
-  background: #613f0a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  flex-wrap: wrap;
-  text-align: center;
+    background: #f8bd5e79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -223,7 +221,6 @@ section h2::after {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-/* ===== Storytelling Section ===== */
 .storytelling {
   background: #fbe8d3;
   padding: 70px 0;
