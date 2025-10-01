@@ -18,26 +18,21 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <header>
-            <div class="header-container">
-                <img src="/images/favicon.ico" alt="Logo" class="logo">
-                <div class="nav-text">
-                    <h1>LemonKitchen</h1>
-                    <p>Bringing the fresh, zesty flavors of Cambodia into every home-cooked adventure</p>
-                </div>
-            </div>
-        </header>
-
         <nav>
+            <div class="header-container">
+                <img src="../images/favicon.ico" alt="Logo" class="logo">
+            </div>
             <ul>
                 <li><a href="../index.htm">HOME</a></li>
                 <li><a href="About Us.html">ABOUT</a></li>
                 <li><a href="Recipes.html">RECIPES</a></li>
                 <li><a href="Contact.html">CONTACT</a></li>
             </ul>
-            <span class="search">
-                <span class="material-symbols-outlined">search</span>
-            </span>
+            <!-- Buttons for Login and Sign Up -->
+            <div class="nav-buttons">
+                <button class="btn-login" onclick="location.href='../page/Login.html'">Login</button>
+                <button class="btn-signup" onclick="location.href='../page/SignUp.html'">Sign up</button>
+            </div>
         </nav>
     </div>
     <!-- Send Message Section -->
@@ -103,9 +98,9 @@
                 Location: Phnom Penh, Cambodia
             </p>
             <p class="social-icons ">
-                Social: 
-                <a href="#"><img src="/images/Facebook_icon_2013.svg.png" alt="">Facebook</a> | 
-                <a href="#"><img src="/images/Instagram_icon.png.webp" alt="">Instagram</a> | 
+                Social:
+                <a href="#"><img src="/images/Facebook_icon_2013.svg.png" alt="">Facebook</a> |
+                <a href="#"><img src="/images/Instagram_icon.png.webp" alt="">Instagram</a> |
                 <a href="#"><img src="/images/YouTube_full-color_icon_(2017).svg.png" alt="">YouTube</a>
             </p>
         </section>
@@ -121,6 +116,22 @@
                 and celebrate Cambodian culinary culture.</p>
         </section>
     </div>
+    <!-- Location Section -->
+    <section id="location">
+        <h2>Our Location</h2>
+        <p>
+            PNC Cambodia<br>
+            Phnom Penh, Cambodia
+        </p>
+
+        <!-- Google Map Embed -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.123456!2d104.912345!3d11.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951234567890%3A0xabcdef123456789!2sPNC%20Cambodia!5e0!3m2!1sen!2skh!4v1696161234567!5m2!1sen!2skh"
+            class="location-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
@@ -138,7 +149,7 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="../index.htm">Home</a></li>
                     <li><a href="Recipes.html">Popular Menu</a></li>
                     <li><a href="About Us.html">About</a></li>
                     <li><a href="Contact.html">Contact</a></li>
@@ -167,4 +178,6 @@
             <p>&copy; 2025 Khmer Food World | All Rights Reserved</p>
         </div>
     </footer>
+
+
 </body>

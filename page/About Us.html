@@ -18,29 +18,23 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <header>
-            <div class="header-container">
-                <img src="/images/favicon.ico" alt="Logo" class="logo">
-                <div class="nav-text">
-                    <h1>LemonKitchen</h1>
-                    <p>Bringing the fresh, zesty flavors of Cambodia into every home-cooked adventure</p>
-                </div>
-            </div>
-        </header>
         <nav>
+            <div class="header-container">
+                <img src="../images/favicon.ico" alt="Logo" class="logo">
+            </div>
             <ul>
                 <li><a href="../index.htm">HOME</a></li>
                 <li><a href="About Us.html">ABOUT</a></li>
                 <li><a href="Recipes.html">RECIPES</a></li>
                 <li><a href="Contact.html">CONTACT</a></li>
             </ul>
-            <span class="search">
-                <span class="material-symbols-outlined">search</span>
-            </span>
+            <!-- Buttons for Login and Sign Up -->
+            <div class="nav-buttons">
+                <button class="btn-login" onclick="location.href='../page/Login.html'">Login</button>
+                <button class="btn-signup" onclick="location.href='../page/SignUp.html'">Sign up</button>
+            </div>
         </nav>
-
     </div>
-
 
     <!-- Main About Section -->
     <section class="about-section">
@@ -60,15 +54,20 @@
     <section class="mission">
         <div class="container">
             <h2>Our Mission</h2>
+            <div class="image-box">
+                <img src="../images/about/Mission image.jpg" alt="Khmer Food Missio">
+            </div>
             <div class="mission-cards">
                 <div class="card">
                     <h3>Preserve Tradition</h3>
                     <p>Keeping Khmer culinary heritage alive by sharing authentic recipes.</p>
                 </div>
+
                 <div class="card">
                     <h3>Inspire Cooking</h3>
                     <p>Encouraging everyone to cook and enjoy Cambodian dishes at home.</p>
                 </div>
+
                 <div class="card">
                     <h3>Share Culture</h3>
                     <p>Promoting Khmer food worldwide as a unique cultural treasure.</p>
@@ -81,6 +80,9 @@
     <section class="storytelling">
         <div class="container">
             <h2>Our Story</h2>
+            <div class="image-box">
+                <img src="../images/about/Story image.jpg" alt="Khmer Food Story">
+            </div>
             <p>
                 Every Khmer dish carries a piece of history — from the royal kitchens of Angkor to
                 family gatherings in villages. Through this blog, we hope to pass on these stories and
@@ -93,9 +95,12 @@
     <section class="invitation">
         <div class="container">
             <h2>Join Our Journey</h2>
+            <div class="image-box">
+                <img src="../images/about/Journey image.webp" alt="Khmer Culinary Journey">
+            </div>
             <p>
                 Be part of our mission to preserve Khmer food traditions. Explore, cook, and share your
-                favorite dishes with us — together, we’ll keep Cambodia’s culinary spirit alive.
+                favorite dishes with us — together, we'll keep Cambodia's culinary spirit alive.
             </p>
         </div>
     </section>
@@ -104,6 +109,9 @@
     <section class="values">
         <div class="container">
             <h2>Our Values</h2>
+            <div class="image-box">
+                <img src="../images/about/value of food.jpg" alt="Value of Khmer Food">
+            </div>
             <div class="value-cards">
                 <div class="card">
                     <h3>Authenticity</h3>
@@ -121,7 +129,6 @@
         </div>
     </section>
 
-
     <!-- Invitation Section -->
     <section class="invitation">
         <h2>Join Our Table</h2>
@@ -132,7 +139,7 @@
         </p>
         <p>
             Follow us on social media for updates, or <a href="Contact.html">contact us</a>
-            directly to share your story. Together, let’s celebrate the beauty of Cambodian food.
+            directly to share your story. Together, let's celebrate the beauty of Cambodian food.
         </p>
     </section>
     <!-- Footer Section -->
@@ -152,7 +159,7 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="../index.htm">Home</a></li>
                     <li><a href="Recipes.html">Popular Menu</a></li>
                     <li><a href="About Us.html">About</a></li>
                     <li><a href="Contact.html">Contact</a></li>

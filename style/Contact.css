@@ -8,31 +8,23 @@
 
 
 body {
-    background-color: #111;
+    background-color: #f7e6ae;
     color: #ddd;
     line-height: 1.6;
 }
+
 
 /* Navbar */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #1a1a1a8e;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.466);
+    background-color: #684a4aa1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header {
-    background: #1a1a1a42;
-    padding: 20px;
-    color: #fff;
-}
-
-.header-container {
-    display: flex;
-    justify-content: center;
-    /* makes logo + text side by side */
-    gap: 250px;
+.navbar nav {
+    gap: 200px;
 }
 
 .logo {
@@ -41,6 +33,7 @@ header {
     height: auto;
     display: flex;
     justify-content: flex-start;
+    margin-left: 50px;
 }
 
 .nav-text {
@@ -60,13 +53,12 @@ header {
     color: #bbb;
 }
 
-
 nav {
-    background: #ce8a1c50;
+    background: #f5bf684f;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 20px;
     flex-wrap: wrap;
 }
 
@@ -89,35 +81,60 @@ nav ul li a:hover {
     color: #ff7043;
 }
 
-.search {
+.nav-buttons {
+    display: flex;
+    gap: 30px;
     margin-left: auto;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.4rem;
+    margin-right: 50px;
+
 }
 
-/* General Section Styling */
+/* Style for the buttons */
+.nav-buttons button {
+    padding: 8px 16px;
+    background-color: white;
+    color: #ff6b6b;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-buttons button:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.nav-buttons button:last-child {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.nav-buttons button:last-child:hover {
+    background-color: white;
+    color: #ff6b6b;
+}
+
+
 .main-contain section {
     background-color: rgba(255, 243, 224, 0.9);
-    /* soft warm Khmer color overlay */
     padding: 60px 30px;
     border-radius: 15px;
     margin-bottom: 40px;
     font-family: 'Khmer OS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #4b3f2f;
-    /* earthy brown text */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
 
-    /* Center content */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-/* Background image space */
 .main-contain section::before {
     content: "";
     position: absolute;
@@ -128,11 +145,9 @@ nav ul li a:hover {
     background: url('/images/khmer-food-bg.jpg') no-repeat center center;
     background-size: cover;
     opacity: 0.15;
-    /* subtle overlay for readability */
     z-index: 0;
 }
 
-/* Make content appear above background image */
 .main-contain section * {
     position: relative;
     z-index: 1;
@@ -143,7 +158,6 @@ nav ul li a:hover {
     font-size: 2rem;
     margin-bottom: 15px;
     color: #b85c38;
-    /* Khmer spice color */
     font-weight: bold;
 }
 
@@ -153,7 +167,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
     color: #4b3f2f;
     max-width: 700px;
-    /* optional for better readability */
 }
 
 /* Form Styling */
@@ -166,9 +179,8 @@ form {
     width: 100%;
     max-width: 600px;
     text-align: start;
-    background-color: #bbb;
+    background-color: #ffebbe;
     padding: 30px;
-    /* centers the form and limits width */
 }
 
 form input[type="text"],
@@ -216,31 +228,61 @@ a:hover {
     text-decoration: underline;
 }
 .social-icons {
-  font-size: 16px; /* text size */
+  font-size: 16px; 
   display: flex;
   align-items: center;
-  gap: 15px; /* spacing between items */
-  flex-wrap: wrap; /* responsive wrap */
+  gap: 15px; 
+  flex-wrap: wrap; 
 }
 
 .social-icons a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333; /* link color */
-  gap: 6px; /* spacing between icon and text */
+  color: #333; 
+  gap: 6px; 
 }
 
 .social-icons img {
-  width: 24px;  /* set good width for icons */
-  height: 24px; /* keep consistent height */
+  width: 24px;  
+  height: 24px; 
   object-fit: contain;
+}
+section h2{
+    color: #b85c38;
+}
+/* Location Section Styles */
+#location {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fdefda;
+}
+
+#location h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color:#b85c38;
+}
+
+#location p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.location-map {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Footer Section */
 .footer {
-    background: #0e1214; /* warm dark brown */
-    color: black;      /* light cream text */
+    background: #0e1214;
+    color: black;      
     padding: 40px 20px 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -255,7 +297,7 @@ a:hover {
 
 .footer h3,
 .footer h4 {
-    color: #ffd27f; /* golden accent */
+    color: #ffd27f; 
     margin-bottom: 12px;
 }
 

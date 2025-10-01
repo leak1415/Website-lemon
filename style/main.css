@@ -22,17 +22,8 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header {
-    background: #1a1a1a9a;
-    padding: 20px;
-    color: #fff;
-}
-
-.header-container {
-    display: flex;
-    justify-content: center;
-    /* makes logo + text side by side */
-    gap: 250px;
+.navbar nav {
+    gap: 200px;
 }
 
 .logo {
@@ -41,6 +32,7 @@ header {
     height: auto;
     display: flex;
     justify-content: flex-start;
+    margin-left: 50px;
 }
 
 .nav-text {
@@ -90,8 +82,10 @@ nav ul li a:hover {
 
 .nav-buttons {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     margin-left: auto;
+    margin-right: 50px;
+
 }
 
 /* Style for the buttons */
@@ -124,15 +118,15 @@ nav ul li a:hover {
 
 .hero {
     background-image: url("/images/img.home/Background.image.jpg");
-    background-size: cover;      
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;               
-    display: flex;               
-    align-items: center;        
-    justify-content: center;     
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;               
+    color: white;
     padding: 20px;
     position: relative;
 }
@@ -147,7 +141,7 @@ nav ul li a:hover {
 
 .hero-text {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 
@@ -246,9 +240,9 @@ nav ul li a:hover {
 }
 
 .menu-items a {
-    text-decoration: none; 
+    text-decoration: none;
     color: inherit;
-}       
+}
 
 
 
@@ -413,15 +407,11 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.menu-category a {
+    text-decoration: none;
 
-/* =======================
-   Responsive Media Queries
-======================= */
+}
 
-/* Desktop (default) */
-/* Already your main styles are desktop-friendly */
-
-/* Tablet: width <= 992px */
 @media (max-width: 992px) {
     .header-container {
         gap: 50px;
