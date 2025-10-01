@@ -118,7 +118,7 @@ nav ul li a:hover {
 
 /* Container for centering content */
 .container {
-  max-width: 1100px;
+  max-width: 900px;
   margin: auto;
   padding: 0 20px;
   text-align: center;
@@ -198,149 +198,226 @@ section h2::after {
   border-radius: 2px;
 }
 
+/* ===== General Image Box ===== */
+.image-box {
+  position: relative;
+  text-align: center;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.5s ease, filter 0.5s ease, opacity 0.5s ease;
+  filter: brightness(0.95) contrast(1.05);
+}
+
+.image-box img:hover {
+  transform: scale(1.08) rotate(-1deg);
+  filter: brightness(1) contrast(1.1);
+  opacity: 1;
+}
+
+/* Optional overlay text on images */
+.image-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(211, 233, 14, 0.555), rgba(0,0,0,0.05));
+  border-radius: 16px;
+  pointer-events: none;
+}
+
 /* ===== Mission Section ===== */
 .mission {
   background: #fff8e1;
-  padding: 60px 0;
-  text-align: center;
+  padding: 60px 20px;
   color: #3e2c1c;
 }
 
 .mission h2 {
   color: #a83232;
+  font-size: 2.4rem;
   margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .mission-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .mission .card {
-  background: #fdf6e3;
-  padding: 25px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, #fdf6e3, #fff3d6);
+  padding: 28px;
+  border-radius: 16px;
   border: 2px solid #f4b41a;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  text-align: left;
+}
+
+.mission .card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.18);
+  background: linear-gradient(135deg, #fff7e1, #fff1c4);
 }
 
 .mission .card h3 {
   color: #2e7d32;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 14px;
 }
 
 .mission .card p {
   color: #444;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-.mission .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
+/* ===== Storytelling Section ===== */
 .storytelling {
   background: #fbe8d3;
-  padding: 70px 0;
+  padding: 70px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.storytelling .image-box {
+  flex: 1 1 400px;
+  max-width: 500px;
   margin: 0;
+}
+
+.storytelling .story-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: left;
 }
 
 .storytelling h2 {
   color: #a83232;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
 }
 
 .storytelling p {
   color: #3e2c1c;
-  max-width: 800px;
-  margin: 15px auto;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.8;
 }
-.image-box {
-  text-align: center;
-  margin: 20px 0;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
 
-.image-box img {
-  max-width: 100%;
-  height: 500px;
-  border-radius: 12px;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  opacity: 0.95;
-}
-
-.image-box img:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-
-
+/* ===== Invitation Section ===== */
 .invitation {
   background: #fff8e1;
   border-left: 6px solid #f4b41a;
-  padding: 50px 0;
-  border-radius: 0;
+  padding: 60px 20px;
+  align-items: center;
+  gap: 40px;
+}
+
+.invitation .image-box {
+  flex: 1 1 400px;
+  max-width: 500px;
   margin: 0;
+}
+
+.invitation .invitation-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: left;
 }
 
 .invitation h2 {
   color: #2e7d32;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
 }
 
 .invitation p {
   color: #333;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
 /* ===== Values Section ===== */
 .values {
   background: #fdf6e3;
-  padding: 60px 0;
+  padding: 60px 20px;
   text-align: center;
   color: #3e2c1c;
 }
 
 .values h2 {
   color: #d4a017;
+  font-size: 2.4rem;
   margin-bottom: 30px;
 }
 
 .value-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .values .card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
+  background: linear-gradient(120deg, #fffdf0, #fff3d6);
+  padding: 28px;
+  border-radius: 16px;
   border: 2px solid #f4b41a;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  text-align: left;
+}
+
+.values .card:hover {
+  transform: translateY(-8px) rotate(1deg);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.2);
 }
 
 .values .card h3 {
   color: #a83232;
-  font-size: 1.3rem;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 14px;
 }
 
 .values .card p {
   color: #444;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-.values .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+/* ===== Responsive Enhancements ===== */
+@media screen and (max-width: 768px) {
+  .storytelling, .invitation {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .storytelling .story-text, .invitation .invitation-text {
+    text-align: center;
+  }
+
+  .image-box img {
+    height: auto;
+  }
 }
+
+
 /* Footer Section */
 .footer {
     background: #0e1214; /* warm dark brown */
