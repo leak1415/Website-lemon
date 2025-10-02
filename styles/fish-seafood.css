@@ -10,28 +10,29 @@
 body {
 
   background-color: #070707;
-  /* line-height: 1.6; */
 }
 
-/* Navbar styles */
 nav {
-  background-color: rgb(243, 225, 124);
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fcce6bc9; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Navbar styling */
 .navbar {
-  color: #070707;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 20px;
 }
 
 .navbar .logo a {
-  text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
-  color: #d35400;
+  text-decoration: none;
+  color: #d35400; 
 }
 
 .nav-links {
@@ -42,14 +43,29 @@ nav {
 
 .nav-links li a {
   text-decoration: none;
+  font-size: 1.1em;
   color: #333;
-  font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #d35400;
 }
+
+/* Sticky Heading under navbar */
+nav h1 {
+  position: sticky;
+  top: 60px; 
+  background: #fde9bfa9;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #ee650a;
+  z-index: 999;
+}
+
+
 
 
 .menu-list {
@@ -193,8 +209,7 @@ h1{
 
 
 .recipe {
-    background: #fff;
-    border: 2px solid #d4a017; /* golden border */
+    background: #f7dc917a;
     border-radius: 16px;
     padding: 20px 30px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);

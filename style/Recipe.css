@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #0f0f0f;
+  background-color: #faf5e0;
   color: #cf9c2c;
   line-height: 1.6;
 }
@@ -118,7 +118,7 @@ nav ul li a:hover {
 
 /* Introduction */
 .hero {
-  background: url('/images/recipe/hero-banner.jpg') no-repeat center center/cover;
+  background: url('/images/recipe/recipe.image7.jpg') no-repeat center center/cover;
   text-align: center;
   padding: 80px 20px;
   position: relative;
@@ -144,12 +144,13 @@ nav ul li a:hover {
 }
 
 .hero h1 {
+  color: #f5621d;
   font-size: 36px;
   margin-bottom: 16px;
 }
 
 .hero p {
-  color: #fda90d;
+  color: #f8f7f5;
 
   font-size: 18px;
   line-height: 1.6;

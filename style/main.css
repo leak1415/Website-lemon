@@ -116,8 +116,9 @@ nav ul li a:hover {
     color: #ff6b6b;
 }
 
+
 .hero {
-    background-image: url("/images/img.home/Background.image.jpg");
+    background-image: url("images/img.home/Background.image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,6 +130,27 @@ nav ul li a:hover {
     color: white;
     padding: 20px;
     position: relative;
+    animation: changeBg 15s infinite linear;
+}
+
+/* Keyframes to switch between 3 images */
+@keyframes changeBg {
+    0% {
+        background-image: url("/images/img.home/Background.image.jpg");
+    }
+    33% {
+        background-image: url("/images/img.home/Background.image4.jpg");
+    }
+    66% {
+        background-image: url("/images/img.home/Background.image5.jpg");
+    }
+    100% {
+        background-image: url("/images/img.home/Background.image6.jpg");
+    }
+    140% {
+        background-image: url("/images/img.home/Background.image.jpg");
+    }
+
 }
 
 .hero::before {
