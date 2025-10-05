@@ -16,6 +16,7 @@ body {
 
 /* Navbar */
 .navbar {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -23,45 +24,27 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Main nav container */
 .navbar nav {
-    gap: 200px;
+    max-width: 1200px;
+    /* keeps it centered on large screens */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ✅ auto spacing */
+    padding: 15px 30px;
 }
 
+/* Logo */
 .logo {
     width: 80px;
-    /* make logo bigger */
     height: auto;
     display: flex;
     justify-content: flex-start;
-    margin-left: 50px;
 }
 
-.nav-text {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.nav-text h1 {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-}
-
-.nav-text p {
-    font-size: 0.95rem;
-    color: #bbb;
-}
-
-nav {
-    background: #f5bf684f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
+/* Nav links */
 nav ul {
     list-style: none;
     display: flex;
@@ -81,15 +64,13 @@ nav ul li a:hover {
     color: #ff7043;
 }
 
+/* Nav buttons (right side) */
 .nav-buttons {
     display: flex;
-    gap: 30px;
-    margin-left: auto;
-    margin-right: 50px;
-
+    gap: 15px;
 }
 
-/* Style for the buttons */
+/* Buttons style */
 .nav-buttons button {
     padding: 8px 16px;
     background-color: white;
@@ -101,7 +82,6 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .nav-buttons button:hover {
     background-color: #ff6b6b;
     color: white;
@@ -116,7 +96,6 @@ nav ul li a:hover {
     background-color: white;
     color: #ff6b6b;
 }
-
 
 .main-contain section {
     background-color: rgba(255, 243, 224, 0.9);
