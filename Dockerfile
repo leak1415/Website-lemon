@@ -1,14 +1,13 @@
-# Use the stable Nginx Alpine image
-FROM nginx:stable-alpine
+# Use official nginx image
+FROM nginx:alpine
 
-#set a work directory
-WORKDIR /usr/share/nginx/html
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
 
-#copy file
-COPY . .
+# Copy your website files to nginx html folder
+COPY . /usr/share/nginx/html
 
-# Expose port 80 to allow web traffic
+# Expose port 80
 EXPOSE 80
 
-# Start Nginx in the foreground (default command)
 CMD ["nginx", "-g", "daemon off;"]
